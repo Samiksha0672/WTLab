@@ -1,0 +1,213 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Navigation list styling */
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Logo Styling */
+h1 {
+    font-size: 36px;
+    margin-right: 40px;
+}
+
+/* Menu items styling */
+h2 {
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for menu items */
+h2:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Search bar styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* Links (Profile, Wishlist, Cart) styling */
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Smaller Hero images */
+.newhero1, .newhero2 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hero2 {
+    height: 450px;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    width: 45%;
+}
+
+.hero1 {
+    height: 500px;
+    padding: 10px;
+    width: 70%;
+}
+
+.newhero1 img:hover, .newhero2 img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* Categories Section */
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.category .cate1, .category .cate2, .category .cate3 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the View More button stays at the bottom */
+}
+
+/* Category Images Grid - 2 rows of 2 images each */
+.category-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the images */
+}
+
+.row img {
+    width: 30%; /* Adjusted width to fit the images */
+    height: 300px; /* Adjusted height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 2px solid #ccc;
+}
+
+.row img:hover {
+    transform: scale(1.05);
+    border-color: black;
+}
+
+/* Shop Now button under each image */
+.shop-now {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: orange;
+}
+
+/* View More button at the bottom of each category */
+.view-more {
+    display: block;
+    margin: 20px auto;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: orange;
+    color:black
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add some padding for a bit more space */
+    width: 100%; /* Ensures the footer spans the full width */
+    position: relative; /* Ensures it's properly positioned */
+    bottom: 0; /* Optional: Ensures the footer stays at the bottom */
+}
